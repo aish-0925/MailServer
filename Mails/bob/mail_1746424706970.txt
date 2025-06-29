@@ -1,0 +1,7 @@
+From: aishwarya12@mail.com
+To: bob
+CC: aishwarya
+BCC: null
+Subject: greetings
+Message:
+hi

@@ -1,0 +1,7 @@
+From: aishwarya
+To: bob
+CC: null
+BCC: null
+Subject: greetings
+Message:
+hi

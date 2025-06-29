@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h2 {
+            color: #333;
+        }
+        .mail {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .mail header {
+            font-weight: bold;
+            color: #555;
+        }
+        .mail .subject {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        .mail .message {
+            margin-top: 10px;
+            color: #666;
+        }
+        .mail-actions {
+            margin-top: 10px;
+        }
+        .mail-actions a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .mail-actions a:hover {
+            text-decoration: underline;
+        }
+        .mail-actions .delete {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Inbox</h2>
+
+    <!-- Inbox content will be inserted here dynamically by the server -->
+    <div id="inbox-messages">
+        <!-- Loop through the mails and display them -->
+        <!-- Example of a mail entry -->
+        <div class="mail">
+            <header>
+                From: John Doe<br>
+                To: [Logged-In User]<br>
+                Date: 2025-04-27
+            </header>
+            <div class="subject">Subject: Test Mail</div>
+            <div class="message">
+                This is a test mail content. Please ignore it for testing purposes.
+            </div>
+            <div class="mail-actions">
+                <a href="/reply?to=[Logged-In User]&subject=Test Mail">Reply</a> |
+                <a href="/deleteMail?id=[Logged-In User]/mail_12345.txt" class="delete">Delete</a>
+            </div>
+        </div>
+        <!-- More mails will be dynamically inserted here -->
+    </div>
+
+    <br>
+    <a href="/send">Compose New Mail</a>
+
+</body>
+</html>
